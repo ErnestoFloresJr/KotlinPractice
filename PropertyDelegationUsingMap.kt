@@ -1,5 +1,9 @@
 fun main(){
-    val obj = PropertyDelegationUsingMap(mutableMapOf("prop1" to "Rimuru Tempest", "prop2" to "Veldora Tempest"))
+    val obj = PropertyDelegationUsingMap(mutableMapOf("prop1" to "Rimuru Tempest", "prop2" to "Slime"))
+    println("Property1: ${obj.prop1}")
+    println("Property2: ${obj.prop2}")
+    obj.prop1 = "Veldora Tempest"
+    obj.prop2 = "Dragon"
     println("Property1: ${obj.prop1}")
     println("Property2: ${obj.prop2}")
 }
